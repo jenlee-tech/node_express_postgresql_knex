@@ -1,4 +1,5 @@
 const productsService = require("./products.service");
+
 function read(req, res) {
   const { product: data } = res.locals;
   res.json({ data });
