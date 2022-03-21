@@ -1,5 +1,9 @@
 const knex = require("../db/connection");
 
+function list() {
+  return knex("suppliers").select("*");
+}
+
 function create(supplier) {
   return knex("suppliers")
     .insert(supplier)
@@ -9,10 +13,6 @@ function create(supplier) {
 
 function read(supplier_id) {
   return knex("suppliers").select("*").where({ supplier_id }).first();
-}
-
-function list() {
-  return knex("suppliers").select("*");
 }
 
 function update(updatedSupplier) {

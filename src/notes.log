@@ -54,3 +54,18 @@ If you have trouble getting the server to run, reach out for assistance.
 
 Notes on how to use Migration CLI
 http://knexjs.org/#Migrations-CLI
+
+
+PROPER RAW OBJECT FOR REQUESTS IN POSTMAN: (PUT OR POST)
+Example below:
+{"data":{
+    "supplier_name":"Ujox's",
+    "supplier_address_line_1":"2781  Lena Lane",
+    "supplier_address_line_2": "true", 
+    "supplier_city": "Dayton",
+    "supplier_state": "OH","supplier_zip": "49449",
+    "supplier_phone": "601-502-6949",
+    "supplier_email":"wwzaoiyxy4k@temporary-mail.com",
+    "supplier_notes": "Every person has their own destiny: the only imperative is to follow it",
+    "supplier_type_of_goods": "Books"    
+    }}
